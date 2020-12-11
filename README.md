@@ -108,6 +108,7 @@ public class SwitchService<T>
         _repository = repository;
     }
 
+
     public IEnumerable<StateDocument> List(int campId)
     {
         var builder = Builders<StateDocument>.Filter;
