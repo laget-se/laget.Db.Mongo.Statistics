@@ -109,11 +109,18 @@ public class SwitchService<T>
     }
 
 
-    public IEnumerable<StateDocument> List(int campId)
+    public CounterDocument Get(int customId)
+    {
+        var filter = Builders<SwitchDocument>.Filter.Eq(x => x.CustomId, customId);
+
+        return _repository.Get(filter);
+    }
+
+    public IEnumerable<StateDocument> List(int customId)
     {
         var builder = Builders<StateDocument>.Filter;
 
-        var filter = builder.Eq(x => x.CampId, campId) &
+        var filter = builder.Eq(x => x.CustomId, customId) &
                         builder.Eq(x => x.Name, typeof(T).Name);
 
         return _repository.Find(filter);
@@ -123,20 +130,20 @@ public class SwitchService<T>
     {
         var builder = Builders<StateDocument>.Filter;
 
-        var filter = builder.Eq(x => x.CampId, entry.CampId) &
+        var filter = builder.Eq(x => x.CustomId, entry.CampId) &
                         builder.Eq(x => x.Name, typeof(T).Name) &
                         builder.Eq(x => x.DateTime, entry.DateTime);
 
         _repository.Upsert(filter, entry);
     }
 
-    public void Set(int campId, bool value)
+    public void Set(int customId, bool value)
     {
-        var entry = new StateDocument { CampId = campId, Name = typeof(T).Name, On = value };
+        var entry = new StateDocument { CustomId = customId, Name = typeof(T).Name, On = value };
 
         var builder = Builders<StateDocument>.Filter;
 
-        var filter = builder.Eq(x => x.CampId, entry.CampId) &
+        var filter = builder.Eq(x => x.CustomId, entry.CustomId) &
                         builder.Eq(x => x.Name, typeof(T).Name) &
                         builder.Eq(x => x.DateTime, entry.DateTime);
 
