@@ -15,7 +15,7 @@
     <repository type="git" url="https://github.com/laget-se/laget.Db.Mongo.Statistics" branch="master" />
     <dependencies>
       <group targetFramework="netstandard2.1">
-        <dependency id="laget.Db.Mongo" version="[1.0.12, )" />
+        <dependency id="laget.Db.Mongo" version="1.0.13" />
       </group>
     </dependencies>
   </metadata>
