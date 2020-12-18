@@ -4,8 +4,8 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="laget.Db.Mongo" Version="1.0.13" />
+  <ItemGroup>      
+      <PackageReference Include="laget.Db.Mongo" Version="1.0.13" />
   </ItemGroup>
 
 </Project>
