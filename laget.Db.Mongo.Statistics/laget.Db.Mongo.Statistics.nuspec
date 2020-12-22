@@ -7,7 +7,7 @@
     <authors>gonace,laget.se</authors>
     <owners>laget.se</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>...</description>
+    <description>A statistics extension of our generic implementation of MongoDB, a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas...</description>
     <summary></summary>
     <license type="expression">MIT</license>
     <projectUrl>https://laget.se</projectUrl>
@@ -15,12 +15,16 @@
     <repository type="git" url="https://github.com/laget-se/laget.Db.Mongo.Statistics" branch="master" />
     <dependencies>
       <group targetFramework="netstandard2.1">
-        <dependency id="laget.Db.Mongo" version="1.0.13" />
+        <dependency id="laget.Db.Mongo" version="(1.0.13,)" />
+      </group>
+      <group targetFramework="netstandard2.0">
+        <dependency id="laget.Db.Mongo" version="(1.0.13,)" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src="..\assets\icon.png" target="assets\" />
     <file src=".\bin\Release\netstandard2.1\*" target="lib\netstandard2.1\" />
+    <file src=".\bin\Release\netstandard2.0\*" target="lib\netstandard2.0\" />
   </files>
 </package>
