@@ -1,5 +1,6 @@
-﻿# laget.Db.Mongo.Statistics
+# laget.Db.Mongo.Statistics
 
+![Nuget](https://img.shields.io/nuget/v/laget.Db.Mongo.Statistics)
 
 ## Usage
 ### Counter
