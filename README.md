@@ -18,7 +18,7 @@ public class CounterDocument : Counter
 }
 ```
 
-### Service
+#### Service
 ```c#
 public class CounterService
 {
@@ -85,6 +85,11 @@ public class CounterService
 ```
 
 ### Object
+#### Document
+> TODO
+```c#
+```
+#### Service
 > TODO
 ```c#
 ```
@@ -100,7 +105,7 @@ public class SwitchDocument : Switch
 }
 ```
 
-### Service
+#### Service
 ```c#
 public class SwitchService<T>
 {
