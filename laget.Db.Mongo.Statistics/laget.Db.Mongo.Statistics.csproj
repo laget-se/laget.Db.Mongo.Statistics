@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="laget.Db.Mongo" Version="1.0.24" />
+    <PackageReference Include="laget.Db.Mongo" Version="1.0.25" />
   </ItemGroup>
 
 </Project>
