@@ -2,12 +2,11 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <NuspecProperties>version=$(Version)</NuspecProperties>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="laget.Db.Mongo" Version="1.0.25" />
+    <PackageReference Include="laget.Db.Mongo" Version="1.1.1" />
   </ItemGroup>
 
 </Project>
