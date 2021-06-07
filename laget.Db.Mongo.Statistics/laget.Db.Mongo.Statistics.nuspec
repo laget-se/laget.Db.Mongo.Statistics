@@ -15,10 +15,10 @@
     <repository type="git" url="https://github.com/laget-se/laget.Db.Mongo.Statistics" branch="master" />
     <dependencies>
       <group targetFramework="netstandard2.1">
-        <dependency id="laget.Db.Mongo" version="1.1.1" />
+        <dependency id="laget.Db.Mongo" version="1.1.2" />
       </group>
       <group targetFramework="netstandard2.0">
-        <dependency id="laget.Db.Mongo" version="1.1.1" />
+        <dependency id="laget.Db.Mongo" version="1.1.2" />
       </group>
     </dependencies>
   </metadata>
