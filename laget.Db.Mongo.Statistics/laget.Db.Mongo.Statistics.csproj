@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="laget.Db.Mongo" Version="1.1.3" />
+    <PackageReference Include="laget.Db.Mongo" Version="1.1.4" />
   </ItemGroup>
 
 </Project>
